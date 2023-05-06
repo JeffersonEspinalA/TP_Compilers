@@ -35,7 +35,6 @@
     SLASH "/"
     LPAREN "("
     RPAREN ")"
-    MAYOR ">"
     COMA ","
     IF_MAYOR "si_mayor"
     IF_MENOR "si_menor"
