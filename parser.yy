@@ -33,7 +33,6 @@
     PLUS "+"
     STAR "*"
     SLASH "/"
-    POWER "^"
     LPAREN "("
     RPAREN ")"
     MAYOR ">"
@@ -77,7 +76,6 @@ exp:
     | exp "-" exp           { $$ = $1 - $3;}
     | exp "*" exp           { $$ = $1 * $3;}
     | exp "/" exp           { $$ = $1 / $3;}
-    | exp "^" exp           { $$ = (int)pow($1,$3);}
     | "si_mayor" "(" exp "," exp ")"       { $$ = ($3 > $5) ? $3 : $5; }
     | "si_menor" "(" exp "," exp ")"       { $$ = ($3 < $5) ? $3 : $5; }
     ;
